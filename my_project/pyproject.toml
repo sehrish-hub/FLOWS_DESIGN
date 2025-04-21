@@ -1,0 +1,40 @@
+[project]
+name = "my-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "sehrish-hub", email = "sehrishshafiq345@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "crewai>=0.102.0",
+    "litellm>=1.60.2",
+]
+
+[project.scripts]
+my-project = "my_project:main"
+piaic = "my_project.main:kickoff"
+piaic1 = "my_project.main1:kickoff"
+chain_prompt1 = "my_project.main2:kickoff"
+chain_prompt2 = "my_project.main3:kickoff"
+route_run = "my_project.main4:kickoff"
+route_plot = "my_project.main4:plot"
+route_run1 = "my_project.main5:kickoff"
+route_plot1 = "my_project.main5:plot1"
+route_run2 = "my_project.main6:kickoff"
+route_plot2 = "my_project.main6:plot2"
+route_run3 = "my_project.main7:kickoff"
+route_plot3 = "my_project.main7:plot3"
+route_run4 = "my_project.main8:kickoff"
+route_plot4 = "my_project.main8:plot4"
+route_run5 = "my_project.main9:kickoff"
+route_plot5 = "my_project.main9:plot5"
+route_run6 = "my_project.main10:kickoff"
+route_plot6 = "my_project.main10:plot6"
+
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
